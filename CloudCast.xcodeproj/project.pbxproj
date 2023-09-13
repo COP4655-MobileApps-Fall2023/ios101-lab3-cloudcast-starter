@@ -79,7 +79,6 @@
 		997BF5DE29D4838D0099F2B4 = {
 			isa = PBXGroup;
 			children = (
-				97CAE9EF2AB1F0C9004DD8B7 /* ForecastViewController.swift */,
 				997BF5E929D4838D0099F2B4 /* CloudCast */,
 				997BF60029D4838E0099F2B4 /* CloudCastTests */,
 				997BF60A29D4838E0099F2B4 /* CloudCastUITests */,
@@ -102,6 +101,7 @@
 			children = (
 				997BF5EA29D4838D0099F2B4 /* AppDelegate.swift */,
 				997BF5EC29D4838D0099F2B4 /* SceneDelegate.swift */,
+				97CAE9EF2AB1F0C9004DD8B7 /* ForecastViewController.swift */,
 				997BF5F029D4838D0099F2B4 /* Main.storyboard */,
 				997BF5F329D4838E0099F2B4 /* Assets.xcassets */,
 				997BF5F529D4838E0099F2B4 /* LaunchScreen.storyboard */,
