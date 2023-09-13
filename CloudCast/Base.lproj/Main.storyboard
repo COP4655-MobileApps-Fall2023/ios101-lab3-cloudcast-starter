@@ -60,6 +60,22 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyj-IW-2su">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="ANf-b5-Jrj" eventType="touchUpInside" id="bQg-FF-YeR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8f-kO-qqM">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForewardButton:" destination="ANf-b5-Jrj" eventType="touchUpInside" id="KP7-YE-Zcl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ll1-Wv-mMq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,7 +84,11 @@
                             <constraint firstItem="iP3-bF-rk7" firstAttribute="centerX" secondItem="hD3-LW-7j8" secondAttribute="centerX" id="7ZW-vb-e3o"/>
                             <constraint firstItem="6jZ-OB-7rv" firstAttribute="leading" secondItem="Wdb-zk-Vwl" secondAttribute="trailing" constant="2" id="8uI-jT-YH4"/>
                             <constraint firstItem="iP3-bF-rk7" firstAttribute="top" secondItem="6jZ-OB-7rv" secondAttribute="bottom" constant="51.333333333333343" id="BJ0-fl-nhe"/>
+                            <constraint firstItem="wyj-IW-2su" firstAttribute="centerY" secondItem="hD3-LW-7j8" secondAttribute="centerY" constant="-75" id="Voh-M3-F6U"/>
+                            <constraint firstItem="wyj-IW-2su" firstAttribute="leading" secondItem="Ll1-Wv-mMq" secondAttribute="leading" constant="16" id="WFr-NP-bkn"/>
+                            <constraint firstItem="c8f-kO-qqM" firstAttribute="centerY" secondItem="hD3-LW-7j8" secondAttribute="centerY" constant="-75" id="dDu-1z-FIE"/>
                             <constraint firstItem="Wdb-zk-Vwl" firstAttribute="top" secondItem="Ll1-Wv-mMq" secondAttribute="top" constant="20" id="rn2-SH-MOI"/>
+                            <constraint firstItem="Ll1-Wv-mMq" firstAttribute="trailing" secondItem="c8f-kO-qqM" secondAttribute="trailing" constant="16" id="srI-kK-Knf"/>
                             <constraint firstItem="6jZ-OB-7rv" firstAttribute="top" secondItem="Ll1-Wv-mMq" secondAttribute="top" constant="20" id="zFr-aB-OJ2"/>
                         </constraints>
                     </view>
@@ -82,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv7-1T-rqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1152" y="-570"/>
+            <point key="canvasLocation" x="-1512" y="-1072"/>
         </scene>
     </scenes>
     <resources>
