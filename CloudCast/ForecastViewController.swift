@@ -17,6 +17,8 @@ class ForecastViewController: UIViewController {
     @IBOutlet weak var forecastImageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var windSpeedLabel: UILabel!
+    @IBOutlet weak var precipitationLabel: UILabel!
     // Function override for the view controller
     // This is fired when the view has finished loading for the first time
     private var forecasts = [WeatherForecast]() // tracks all the possible forecasts
@@ -60,6 +62,8 @@ class ForecastViewController: UIViewController {
       let dateFormatter = DateFormatter()
       dateFormatter.dateFormat = "MMMM d, yyyy"
       dateLabel.text = dateFormatter.string(from: forecast.date)
+        windSpeedLabel.text = "\(forecast.windSpeed) mph"
+        precipitationLabel.text = "\(forecast.precipitation)%"
     }
     @IBAction func didTapBackButton(_ sender: Any) {
         selectedForecastIndex = max(0, selectedForecastIndex - 1) // don't go lower than 0 index
