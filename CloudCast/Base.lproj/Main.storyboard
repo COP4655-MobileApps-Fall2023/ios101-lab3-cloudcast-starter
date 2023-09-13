@@ -72,10 +72,17 @@
                             <constraint firstItem="6jZ-OB-7rv" firstAttribute="top" secondItem="Ll1-Wv-mMq" secondAttribute="top" constant="20" id="zFr-aB-OJ2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="hY1-Ya-9XD" id="fC5-Bu-9tc"/>
+                        <outlet property="descriptionLabel" destination="USI-3u-yCx" id="PCN-f0-eNN"/>
+                        <outlet property="forecastImageView" destination="zyy-cb-KMT" id="kaT-p1-f43"/>
+                        <outlet property="locationLabel" destination="6jZ-OB-7rv" id="87Z-ia-ALs"/>
+                        <outlet property="temperatureLabel" destination="wTD-DJ-rTX" id="V40-mc-LPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv7-1T-rqm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="-94"/>
+            <point key="canvasLocation" x="-1152" y="-570"/>
         </scene>
     </scenes>
     <resources>
